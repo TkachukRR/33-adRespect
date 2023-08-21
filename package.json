@@ -1,0 +1,15 @@
+{
+  "name": "44-adrespect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "twd": "npx tailwindcss -i ./input.css -o ./styles/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Tkachuk Roman",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
