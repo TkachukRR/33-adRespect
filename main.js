@@ -1,4 +1,4 @@
-import { getHeaderMarkup } from "./scripts/header.js";
+import { getHeaderMarkup } from "./scripts/header.component.js";
 
 const pageRefs = {
   header: document.querySelector("header"),
