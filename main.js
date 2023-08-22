@@ -2,6 +2,7 @@ import { getHeaderMarkup } from "./scripts/header.js";
 
 const pageRefs = {
   header: document.querySelector("header"),
+  hero: document.querySelector("section.hero"),
 };
 
 async function fetchData() {
