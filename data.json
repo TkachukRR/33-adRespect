@@ -7,7 +7,7 @@
   "hero": {
     "id": "hero",
     "title": "Nowoczesna aranżacja Twojego ogrodu",
-    "desription": "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu."
+    "description": "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu."
   },
   "offer": {
     "id": "offer",
@@ -43,7 +43,7 @@
     "title": "O firmie",
     "tagline": "Tworzymy z pasją",
     "accent": ["pasją"],
-    "desription": "Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia."
+    "description": "Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia."
   },
   "realization": {
     "id": "realization",
@@ -55,7 +55,7 @@
   "socialBaner": {
     "id": "socialBaner",
     "tagline": "Zostańmy w kontakcie! Znajdziesz nas na Instagramie.",
-    "desription": "Śledź nasze najnowsze realizacje!"
+    "description": "Śledź nasze najnowsze realizacje!"
   },
   "footer": {
     "id": "logo.svg",

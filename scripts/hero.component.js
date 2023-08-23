@@ -1,4 +1,6 @@
 export function getHeroMarkup(data) {
+  const hero = data.hero;
+  const realizationId = data.realization.id;
   return `
     <div class="bg-beige flex gap-[64px] relative">
           <div class="intro w-1/2">
@@ -6,10 +8,10 @@ export function getHeroMarkup(data) {
             <div class="container mx-auto h-full">
               <div class="max-w-[490px] flex flex-col justify-center items-start h-full">
                 <h1 class="text-[60px] font-motser font-medium leading-[70px] mb-[44px]">
-                  Nowoczesna aranżacja Twojego ogrodu
+                  ${hero.title}
                 </h1>
                 <p class="mb-[72px]">
-                  Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
+                  ${hero.description}
                 </p>
                 <ul class="flex gap-[36px] items-center">
                   <li>
@@ -18,7 +20,7 @@ export function getHeroMarkup(data) {
                     </a>
                   </li>
                   <li>
-                    <a href="" class="btn btn-green-light">
+                    <a href="#${realizationId}" class="btn btn-green-light">
                       <span class="mr-[8px]">Zobacz nasze realizacje</span>
                       <img
                         src="./../images/long_arrow.svg"
