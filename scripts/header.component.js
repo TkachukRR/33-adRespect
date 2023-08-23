@@ -26,8 +26,7 @@ export function getHeaderMarkup(data) {
     </a>
     <div class="flex items-center gap-[54px]">
       ${addNavigation ? makeNavMarkup(data, navButtonIds) : null}
+      ${addSearching ? makeSearchingMarkup() : null}
     </div>
   </div>`;
 }
-
-// ${!addSearching ?? makeSearchingMarkup()}

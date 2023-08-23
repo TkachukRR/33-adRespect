@@ -39,7 +39,7 @@ function makeHiddenSubMenuMarkup(subMenuArray) {
   const subMenuItems = subMenuArray
     .map((subMenuElement) => {
       return `
-      <li class="py-[5px] my-[5px] ml-[10px]">
+      <li class="py-[2px] my-[2px] ">
         <a href="#${subMenuElement.id}" class="">
           ${subMenuElement.title}
         </a>
@@ -47,5 +47,5 @@ function makeHiddenSubMenuMarkup(subMenuArray) {
     })
     .join("");
 
-  return `<ul class="z-10">${subMenuItems}</ul>`;
+  return `<ul class="flex gap-[10px] bg-grey">${subMenuItems}</ul>`;
 }
