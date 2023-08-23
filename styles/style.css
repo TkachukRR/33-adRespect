@@ -663,6 +663,10 @@ video {
   isolation: auto;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .float-right {
   float: right;
 }
@@ -694,6 +698,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-\[5px\] {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .mb-\[12px\] {
@@ -734,6 +743,10 @@ video {
 
 .mt-\[96px\] {
   margin-top: 96px;
+}
+
+.ml-\[10px\] {
+  margin-left: 10px;
 }
 
 .box-border {
@@ -2041,6 +2054,11 @@ video {
 .py-\[48px\] {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .pb-\[160px\] {
