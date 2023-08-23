@@ -1,3 +1,5 @@
+import getOfferCardMarkup from "./offer-card.js";
+
 export function getOfferMarkup(data) {
   const sectionData = data.filter(
     (section) => section.sectionTitle === "Oferta"
@@ -10,7 +12,12 @@ export function getOfferMarkup(data) {
             </div>
             ${sectionData.tagline}
         </h2>
-        <p class="max-w-[700px] tracking--.16 leading-150%">${sectionData.intro}</p>
+        <p class="max-w-[700px] tracking--.16 leading-150%">${
+          sectionData.intro
+        }</p>
     </div>
+    <ul class="flex gap-[64px] mt-[96px]">
+        ${getOfferCardMarkup(sectionData.options)}
+    </ul>
     `;
 }

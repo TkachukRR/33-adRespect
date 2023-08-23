@@ -720,6 +720,22 @@ video {
   margin-bottom: 32px;
 }
 
+.mt-\[96px\] {
+  margin-top: 96px;
+}
+
+.mb-\[34px\] {
+  margin-bottom: 34px;
+}
+
+.mb-\[12px\] {
+  margin-bottom: 12px;
+}
+
+.mb-\[63px\] {
+  margin-bottom: 63px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -839,6 +855,10 @@ video {
   height: 100%;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -857,6 +877,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .max-w-\[1040px\] {
@@ -918,6 +942,16 @@ video {
 
 .rotate-180 {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[270deg\] {
+  --tw-rotate: 270deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1709,6 +1743,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[28px\] {
+  border-radius: 28px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1853,6 +1891,11 @@ video {
   background-color: rgb(245 240 236 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1976,6 +2019,21 @@ video {
 .py-\[24px\] {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-\[48px\] {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.py-\[48px\] {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .pb-\[160px\] {
