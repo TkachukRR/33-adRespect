@@ -1,80 +1,81 @@
-[
-  {
-    "sectionTitle": "Oferta",
+{
+  "header": {
+    "logo": "logo.svg",
+    "navigation": true,
+    "searching": true
+  },
+  "hero": {
+    "id": "hero",
+    "title": "Nowoczesna aranżacja Twojego ogrodu",
+    "desription": "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu."
+  },
+  "offer": {
+    "id": "offer",
+    "onNavigation": true,
+    "title": "Oferta",
     "tagline": "Działamy kompleksowo",
-    "intro": "Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. ",
+    "accent": ["kompleksowo"],
+    "desription": "Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.",
     "options": [
       {
+        "id": "projects",
         "title": "Projekty",
         "image": "projekty.svg",
         "description": "Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni."
       },
       {
+        "id": "visualizations",
         "title": "Wizualizacje",
         "image": "wizualizacje.svg",
         "description": "Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D."
       },
       {
+        "id": "realizations",
         "title": "Realizacje",
         "image": "realizacje.svg",
         "description": "Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii."
       }
     ]
   },
-  {
-    "sectionTitle": "O firmie",
+  "about": {
+    "id": "about",
+    "onNavigation": true,
+    "title": "O firmie",
     "tagline": "Tworzymy z pasją",
-    "intro": "Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia."
+    "accent": ["pasją"],
+    "desription": "Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia."
   },
-  {
-    "sectionTitle": "Realizacje",
+  "realization": {
+    "id": "realization",
+    "onNavigation": true,
+    "title": "Realizacje",
     "tagline": "Nasze projekty",
-    "intro": "",
-    "slides": [
-      "projekt01.jpg",
-      "projekt02.jpg",
-      "projekt03.jpg",
-      "projekt04.jpg",
-      "projekt05.jpg",
-      "projekt06.jpg",
-      "projekt07.jpg",
-      "projekt08.jpg",
-      "projekt09.jpg"
-    ]
+    "accent": ["projekty"]
   },
-  {
-    "sectionTitle": "Kontakt",
+  "socialBaner": {
+    "id": "socialBaner",
     "tagline": "Zostańmy w kontakcie! Znajdziesz nas na Instagramie.",
-    "intro": "",
-    "contacts": {
+    "desription": "Śledź nasze najnowsze realizacje!"
+  },
+  "footer": {
+    "id": "logo.svg",
+    "copyright": "Copyright © 2022",
+    "creatorLogo": "adRespect.svg"
+  },
+  "contacts": {
+    "id": "contacts",
+    "onNavigation": true,
+    "title": "Kontakt",
+    "tagline": "Daj znać, co możemy dla Ciebie zrobić!",
+    "by": {
+      "phones": ["000-000-000"],
+      "mails": ["giarddesign@kontakt.pl"],
       "social": [
-        {
-          "title": "Kontakt",
-          "link": "#"
-        },
-        {
-          "title": "Instagram",
-          "link": "#"
-        },
-        {
-          "title": "Facebook",
-          "link": "#"
-        },
-        {
-          "title": "LinkedIn",
-          "link": "#"
-        }
-      ],
-      "phoneMail": [
-        {
-          "title": "000-000-000",
-          "link": "000000000"
-        },
-        {
-          "title": "giarddesign@kontakt.pl",
-          "link": "giarddesign@kontakt.pl"
-        }
+        { "name": "Kontakt", "link": "" },
+        { "name": "Instagram", "link": "" },
+        { "name": "Facebook", "link": "" },
+        { "name": "LinkedIn", "link": "" }
       ]
     }
   }
-]
+}
