@@ -34,8 +34,10 @@ module.exports = {
         "150%": "150%",
       },
       fontSize: {
+        "12px": "12px",
         "14px": "14px",
         "16px": "16px",
+        "48px": "48px",
         "60px": "60px",
       },
     },
