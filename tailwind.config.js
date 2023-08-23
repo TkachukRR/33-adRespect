@@ -34,7 +34,9 @@ module.exports = {
         "150%": "150%",
       },
       fontSize: {
-        small: "14px",
+        "14px": "14px",
+        "16px": "16px",
+        "60px": "60px",
       },
     },
     plugins: [],
