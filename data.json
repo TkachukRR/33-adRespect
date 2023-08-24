@@ -54,7 +54,8 @@
   },
   "socialBanner": {
     "id": "socialBaner",
-    "tagline": "Zostańmy w kontakcie! Znajdziesz nas na Instagramie.",
+    "tagline": "Zostańmy w kontakcie! Znajdziesz nas na Instagramie",
+    "accent": ["Instagramie"],
     "description": "Śledź nasze najnowsze realizacje!"
   },
   "footer": {
