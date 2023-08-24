@@ -25,7 +25,9 @@ export function getFooterMarkup(data) {
                 </div>
             </div>
             <div class="mb-[120px]">
-                <address class="flex justify-between not-italic text-14px tracking--.14 leading-150%">
+                <address id="${
+                  data.contacts.id
+                }" class="flex justify-between not-italic text-14px tracking--.14 leading-150%">
                     <ul class="flex gap-[48px]">${getSocialItems(
                       data.contacts.by
                     )}</ul>
