@@ -663,6 +663,10 @@ video {
   top: 0px;
 }
 
+.bottom-\[44px\] {
+  bottom: 44px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -906,6 +910,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-\[1475px\] {
+  max-height: 1475px;
 }
 
 .w-0 {
@@ -2198,6 +2206,10 @@ video {
 
 .pt-\[120px\] {
   padding-top: 120px;
+}
+
+.pb-\[44px\] {
+  padding-bottom: 44px;
 }
 
 .text-left {

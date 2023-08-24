@@ -34,6 +34,8 @@ async function fetchData() {
       getSocialBannerMarkup(data)
     );
     pageRefs.footer.insertAdjacentHTML("beforeend", getFooterMarkup(data));
+
+    realization.addEventListener("click", () => console.log("111"));
   } catch (error) {
     console.error("Data loading error:", error);
   }
