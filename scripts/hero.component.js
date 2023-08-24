@@ -35,7 +35,7 @@ export function getHeroMarkup(data) {
           </div>
           
           <div class="slider bg-black h-[737px] w-1/2 overflow-y-hidden">
-            <img src="./../images/slide_1.jpg" class="object-cover rotate-180"/>
+            <img src="./../images/slide_1.webp" class="object-cover rotate-180"/>
             <div class="buttons px-[32px] py-[24px] absolute bottom-0 right-0 bg-grey">
               <button class="w-[48px] h-[48px] ">
                 <img src="./../images/slider_arrow.svg" class=""/>

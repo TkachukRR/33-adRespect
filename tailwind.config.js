@@ -43,7 +43,7 @@ module.exports = {
         "60px": "60px",
       },
       backgroundImage: {
-        about: "url('../images/about.jpg')",
+        about: "url('../images/about.webp')",
       },
     },
     plugins: [],
