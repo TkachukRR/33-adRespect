@@ -23,3 +23,8 @@
 .btn-green-light {
   border: 1px solid theme("colors.green");
 }
+
+.btn-wight {
+  color: theme("colors.grey");
+  border: 1px solid theme("colors.grey");
+}
