@@ -6,7 +6,7 @@ export function getAboutMarkup(data) {
   <div class="flex gap-[64px] bg-green">
     <div class="h-[720px] w-1/2 overflow-hidden bg-about bg-cover bg-center">
     </div>
-    <div class="w-1/2 h-[100%] text-grey pl-[96px] flex flex-col justify-center items-start">
+    <div class="w-1/2 h-[720px] text-grey pl-[96px] flex flex-col justify-center items-start">
         <div class="max-w-[500px] ">
             ${getMainSectionMarkup(sectionData, "text-grey")}
             <a href="" class="inline-block btn btn-wight mt-[72px]">

@@ -6,8 +6,22 @@ export function getRealizationMarkup(data) {
     <div class="max-w-[1120px] mx-auto pt-[120px] pb-[96px]">
       ${getMainSectionMarkup(sectionData, "text-green")}
     </div>
-    <div>
-    
-    </div>
     `;
 }
+
+const masonry = new Macy({
+  container: ".macy",
+  mobileFirst: true,
+  trueOrder: false,
+  waitForImages: false,
+  columns: 1,
+  margin: {
+    x: 43,
+    y: 42,
+  },
+  breakAt: {
+    1599: 4,
+    1399: 3,
+    799: 2,
+  },
+});

@@ -9,7 +9,7 @@ const pageRefs = {
   hero: document.querySelector("section.hero"),
   offer: document.querySelector("section.offer"),
   about: document.querySelector("section.about"),
-  realization: document.querySelector("section.realization"),
+  realization: document.querySelector(".realization__content"),
 };
 
 async function fetchData() {
