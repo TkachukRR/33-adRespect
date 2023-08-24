@@ -59,7 +59,8 @@
     "description": "Śledź nasze najnowsze realizacje!"
   },
   "footer": {
-    "id": "logo.svg",
+    "id": "footer",
+    "tagline": "Daj znać, co możemy dla Ciebie zrobić!",
     "copyright": "Copyright © 2022",
     "creatorLogo": "adRespect.svg"
   },
@@ -67,7 +68,6 @@
     "id": "contacts",
     "onNavigation": true,
     "title": "Kontakt",
-    "tagline": "Daj znać, co możemy dla Ciebie zrobić!",
     "by": {
       "phones": ["000-000-000"],
       "mails": ["giarddesign@kontakt.pl"],

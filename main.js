@@ -4,6 +4,7 @@ import { getOfferMarkup } from "./scripts/offer.component.js";
 import { getAboutMarkup } from "./scripts/about.component.js";
 import { getRealizationMarkup } from "./scripts/realization.component.js";
 import { getSocialBannerMarkup } from "./scripts/social-banner.component.js";
+import { getFooterMarkup } from "./scripts/footer.component.js";
 
 const pageRefs = {
   header: document.querySelector("header"),
@@ -12,6 +13,7 @@ const pageRefs = {
   about: document.querySelector("section.about"),
   realization: document.querySelector(".realization__content"),
   banner: document.querySelector(".banner"),
+  footer: document.querySelector(".footer"),
 };
 
 async function fetchData() {
@@ -31,6 +33,7 @@ async function fetchData() {
       "beforeend",
       getSocialBannerMarkup(data)
     );
+    pageRefs.footer.insertAdjacentHTML("beforeend", getFooterMarkup(data));
   } catch (error) {
     console.error("Data loading error:", error);
   }
