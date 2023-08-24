@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>adRespect</title>
     <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
   </head>
   <body class="bg-grey">
     <header
@@ -16,23 +20,75 @@
       ></section>
       <section class="offer container mx-auto pt-[120px] pb-[160px]"></section>
       <section class="about"></section>
-      <section class="realization bg-beige">
+      <section class="realization bg-beige relative">
         <div class="realization__content"></div>
-        <div class="macy max-w-[1600px] mx-auto h-[1475px]">
-          <img src="./../images/realization/001.webp" alt="project" />
-          <img src="./../images/realization/002.webp" alt="project" />
-          <img src="./../images/realization/003.webp" alt="project" />
-          <img src="./../images/realization/004.webp" alt="project" />
-          <img src="./../images/realization/005.webp" alt="project" />
-          <img src="./../images/realization/006.webp" alt="project" />
-          <img src="./../images/realization/007.webp" alt="project" />
-          <img src="./../images/realization/008.webp" alt="project" />
-          <img src="./../images/realization/009.webp" alt="project" />
+        <ul class="macy max-w-[1600px] mx-auto h-[1475px] overflow-hidden">
+          <li>
+            <a href="./../images/realization/001-full.webp" class="fancybox"
+              ><img src="./../images/realization/001.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/002-full.webp" class="fancybox"
+              ><img src="./../images/realization/002.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/003-full.webp" class="fancybox"
+              ><img src="./../images/realization/003.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/004-full.webp" class="fancybox"
+              ><img src="./../images/realization/004.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/005-full.webp" class="fancybox"
+              ><img src="./../images/realization/005.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/006-full.webp" class="fancybox"
+              ><img src="./../images/realization/006.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/007-full.webp" class="fancybox"
+              ><img src="./../images/realization/007.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/008-full.webp" class="fancybox"
+              ><img src="./../images/realization/008.webp" alt="project"
+            /></a>
+          </li>
+          <li>
+            <a href="./../images/realization/009-full.webp" class="fancybox"
+              ><img src="./../images/realization/009.webp" alt="project"
+            /></a>
+          </li>
+        </ul>
+        <div class="gradient h-[1000px] absolute bottom-0 w-full">
+          <button
+            type="button"
+            class="flex items-center gap-[8px] btn border absolute bottom-[45.5px] right-1/2 translate-x-1/2"
+          >
+            Rozwiń
+            <svg
+              class="inline-block w-[16px] h-[16px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <use xlink:href="./images/long_arrow.svg#Vector"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="banner bg-grey py-[60px]"></section>
     </main>
     <footer class="footer bg-black py-[80px] text-grey"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script type="module" src="main.js"></script>
   </body>

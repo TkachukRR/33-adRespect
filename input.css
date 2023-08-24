@@ -34,3 +34,7 @@
   color: theme("colors.green");
   border: 1px solid theme("colors.grey");
 }
+
+.gradient {
+  background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
+}

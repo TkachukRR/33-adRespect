@@ -13,7 +13,7 @@ const masonry = new Macy({
   container: ".macy",
   mobileFirst: true,
   trueOrder: false,
-  waitForImages: false,
+  waitForImages: true,
   columns: 1,
   margin: {
     x: 43,

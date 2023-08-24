@@ -639,6 +639,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[45\.5px\] {
+  bottom: 45.5px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -649,6 +653,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.right-1\/2 {
+  right: 50%;
 }
 
 .top-0 {
@@ -852,12 +860,24 @@ video {
   display: list-item;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .hidden {
   display: none;
 }
 
 .h-0 {
   height: 0px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-\[1000px\] {
+  height: 1000px;
 }
 
 .h-\[1475px\] {
@@ -906,6 +926,10 @@ video {
 
 .w-\[48px\] {
   width: 48px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-screen {
@@ -978,6 +1002,11 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-y-full {
@@ -1471,6 +1500,10 @@ video {
   gap: 10px;
 }
 
+.gap-\[16px\] {
+  gap: 16px;
+}
+
 .gap-\[24px\] {
   gap: 24px;
 }
@@ -1493,10 +1526,6 @@ video {
 
 .gap-\[8px\] {
   gap: 8px;
-}
-
-.gap-\[16px\] {
-  gap: 16px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2646,6 +2675,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.\!invert {
+  --tw-invert: invert(100%) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2771,6 +2805,10 @@ video {
   background: #F5F0EC;
   color: #1B5B31;
   border: 1px solid #F5F0EC;
+}
+
+.gradient {
+  background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
 }
 
 @media (min-width: 640px) {
