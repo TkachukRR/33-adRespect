@@ -11,7 +11,7 @@ export function getMainSectionMarkup(sectionData, titleColor) {
           ${updateAccentWords(sectionData.tagline, sectionData.accent)}
         </h2>
         <p class="max-w-[700px] tracking--.16 leading-150%">${
-          sectionData.description
+          sectionData.description ?? ""
         }</p>
   `;
 }

@@ -2,12 +2,14 @@ import { getHeaderMarkup } from "./scripts/header.component.js";
 import { getHeroMarkup } from "./scripts/hero.component.js";
 import { getOfferMarkup } from "./scripts/offer.component.js";
 import { getAboutMarkup } from "./scripts/about.component.js";
+import { getRealizationMarkup } from "./scripts/realization.component.js";
 
 const pageRefs = {
   header: document.querySelector("header"),
   hero: document.querySelector("section.hero"),
   offer: document.querySelector("section.offer"),
   about: document.querySelector("section.about"),
+  realization: document.querySelector("section.realization"),
 };
 
 async function fetchData() {
@@ -19,6 +21,10 @@ async function fetchData() {
     pageRefs.hero.insertAdjacentHTML("beforeend", getHeroMarkup(data));
     pageRefs.offer.insertAdjacentHTML("beforeend", getOfferMarkup(data));
     pageRefs.about.insertAdjacentHTML("beforeend", getAboutMarkup(data));
+    pageRefs.realization.insertAdjacentHTML(
+      "beforeend",
+      getRealizationMarkup(data)
+    );
   } catch (error) {
     console.error("Data loading error:", error);
   }
