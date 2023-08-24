@@ -41,6 +41,9 @@ module.exports = {
         "48px": "48px",
         "60px": "60px",
       },
+      backgroundImage: {
+        about: "url('../images/about.jpg')",
+      },
     },
     plugins: [],
   },
