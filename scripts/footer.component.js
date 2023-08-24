@@ -24,6 +24,37 @@ export function getFooterMarkup(data) {
                     </a>
                 </div>
             </div>
+            <div class="mb-[120px]">
+                <address class="flex justify-between not-italic text-14px tracking--.14 leading-150%">
+                    <ul class="flex gap-[48px]">${getSocialItems(
+                      data.contacts.by
+                    )}</ul>
+                    <ul class="flex gap-[48px]">${getContactItems(
+                      data.contacts.by
+                    )}</ul>
+                </address>
+            </div>
         </div>
     `;
+}
+
+function getSocialItems(data) {
+  const socials = data.social;
+  return socials
+    .map(
+      (social) => `<li>
+            <a href="${social.link}">${social.name}</a>
+        </li>`
+    )
+    .join("");
+}
+function getContactItems(data) {
+  const contacts = [...data.phones, ...data.mails];
+  return contacts
+    .map(
+      (contact) => `<li>
+            <a href="${contact}">${contact}</a>
+        </li>`
+    )
+    .join("");
 }
