@@ -34,6 +34,15 @@ export function getFooterMarkup(data) {
                     )}</ul>
                 </address>
             </div>
+            <div class="flex justify-between items-center tracking--.16 leading-150%">
+                <div>${sectionData.copyright}</div>
+                <div class="flex items-center gap-[16px]">
+                    <div>made by</div>
+                    <img src="./../images/${
+                      sectionData.creatorLogo
+                    }" alt="Logo page created studio" />
+                </div>
+            </div>
         </div>
     `;
 }
