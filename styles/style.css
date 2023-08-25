@@ -2832,6 +2832,16 @@ video {
 
 .gradient {
   background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
+  pointer-events: none;
+}
+
+.marcy-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.marcy-card:hover {
+  transform: scale(1.05);
+  z-index: 999;
 }
 
 @media (min-width: 640px) {
