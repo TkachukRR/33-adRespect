@@ -1,6 +1,5 @@
 export function getGalleryItemsMarkup(imageNumbers) {
   return imageNumbers
-    .slice(0, 9)
     .map(
       (num) =>
         `<li class="marcy-card">

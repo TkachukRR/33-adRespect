@@ -17,6 +17,15 @@ const GALLERY_ITEMS = [
   "007",
   "008",
   "009",
+  "001",
+  "002",
+  "003",
+  "004",
+  "005",
+  "006",
+  "007",
+  "008",
+  "009",
 ];
 
 const pageRefs = {
@@ -28,6 +37,7 @@ const pageRefs = {
   gallery: document.querySelector("#gallery"),
   banner: document.querySelector(".banner"),
   footer: document.querySelector(".footer"),
+  btnMore: document.querySelector("button#show-more"),
 };
 
 async function fetchData() {
@@ -53,6 +63,13 @@ async function fetchData() {
       getSocialBannerMarkup(data)
     );
     pageRefs.footer.insertAdjacentHTML("beforeend", getFooterMarkup(data));
+    console.log(pageRefs.btnMore);
+
+    pageRefs.btnMore.addEventListener("click", () => {
+      pageRefs.gallery.classList.remove("max-h-[1475px]");
+      document.querySelector(".gradient").classList.remove("gradient");
+      pageRefs.btnMore.style.display = "none";
+    });
   } catch (error) {
     console.error("Data loading error:", error);
   }
