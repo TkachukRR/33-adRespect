@@ -29,7 +29,7 @@ const GALLERY_ITEMS = [
 ];
 
 const pageRefs = {
-  header: document.querySelector("header"),
+  header: document.querySelector("header div.container"),
   hero: document.querySelector("section.hero"),
   offer: document.querySelector("section.offer"),
   about: document.querySelector("section.about"),
@@ -63,7 +63,6 @@ async function fetchData() {
       getSocialBannerMarkup(data)
     );
     pageRefs.footer.insertAdjacentHTML("beforeend", getFooterMarkup(data));
-    console.log(pageRefs.btnMore);
 
     pageRefs.btnMore.addEventListener("click", () => {
       pageRefs.gallery.classList.remove("max-h-[1475px]");

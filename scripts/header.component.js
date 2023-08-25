@@ -4,29 +4,31 @@ import makeNavMarkup from "./navigation.js";
 export function getHeaderMarkup(data) {
   const addNavigation = data.header.navigation;
   const addSearching = data.header.searching;
-  const navButtonIds = [];
+  const navButtonIds = addNavigation ? getButtonIdsArray(data) : [];
 
-  if (addNavigation) {
-    for (const sectionKey in data) {
-      const section = data[sectionKey];
-      if (
-        section.hasOwnProperty("onNavigation") &&
-        section.onNavigation === true
-      ) {
-        navButtonIds.push(section.id);
-      }
-    }
-  }
   return `
-  <div class="container mx-auto flex justify-between px-[9px] py-[24px] content-center">
-    <a href="/" class="flex content-center pointer">
-      <img 
-        src="./images/${data.header.logo}" 
-        alt="Giard design logo" />
+    <a href="/" class="flex items-center pointer">
+      <img src="./images/${data.header.logo}" alt="Giard design logo" class=""/>
     </a>
     <div class="flex items-center gap-[54px]">
       ${addNavigation ? makeNavMarkup(data, navButtonIds) : null}
       ${addSearching ? makeSearchingMarkup() : null}
     </div>
-  </div>`;
+  `;
+}
+
+function getButtonIdsArray(data) {
+  const ids = [];
+
+  for (const sectionKey in data) {
+    const section = data[sectionKey];
+    if (
+      section.hasOwnProperty("onNavigation") &&
+      section.onNavigation === true
+    ) {
+      ids.push(section.id);
+    }
+  }
+
+  return ids;
 }

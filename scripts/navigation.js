@@ -1,7 +1,7 @@
 export default function makeNavMarkup(data, ids) {
   return `
     <nav class="">
-      <ul class="flex items-center gap-[54px] ">
+      <ul class="flex items-center gap-[54px]">
         ${makeNavItemsMarkup(data, ids)}
       </ul>
     </nav>`;
@@ -27,9 +27,7 @@ function makeNavItemsMarkup(data, ids) {
           ${title}
           <img src="./images/arrow_down.svg" alt="submenu arrow" class="group-hover:rotate-180"/>
         </a>
-        <div class="h-0 absolute bottom-0 translate-y-full overflow-hidden transition-all duration-100 group-hover:h-auto ">
-          ${makeHiddenSubMenuMarkup(data[section].options)}
-        </div>
+        ${makeHiddenSubMenuMarkup(data[section].options)}
       </li>`;
     })
     .join("");
@@ -47,5 +45,5 @@ function makeHiddenSubMenuMarkup(subMenuArray) {
     })
     .join("");
 
-  return `<ul class="flex gap-[10px] bg-grey">${subMenuItems}</ul>`;
+  return `<ul class="flex gap-[10px] bg-grey h-0 absolute bottom-0 translate-y-full overflow-hidden transition-all duration-100 group-hover:h-auto">${subMenuItems}</ul>`;
 }

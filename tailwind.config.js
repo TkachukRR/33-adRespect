@@ -14,7 +14,6 @@ module.exports = {
       motser: ["Montserrat", "sans-serif"],
     },
     extend: {
-      spacing: {},
       borderRadius: {
         "4xl": "2rem",
       },
