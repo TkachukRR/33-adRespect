@@ -8,19 +8,3 @@ export function getRealizationMarkup(data) {
     </div>
     `;
 }
-
-const masonry = new Macy({
-  container: ".macy",
-  mobileFirst: true,
-  trueOrder: false,
-  waitForImages: true,
-  columns: 1,
-  margin: {
-    x: 43,
-    y: 42,
-  },
-  breakAt: {
-    1024: 3,
-    480: 2,
-  },
-});

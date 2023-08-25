@@ -5,13 +5,27 @@ import { getAboutMarkup } from "./scripts/about.component.js";
 import { getRealizationMarkup } from "./scripts/realization.component.js";
 import { getSocialBannerMarkup } from "./scripts/social-banner.component.js";
 import { getFooterMarkup } from "./scripts/footer.component.js";
+import { getGalleryItemsMarkup, makeMarcy } from "./scripts/gallery.js";
+
+const GALLERY_ITEMS = [
+  "001",
+  "002",
+  "003",
+  "004",
+  "005",
+  "006",
+  "007",
+  "008",
+  "009",
+];
 
 const pageRefs = {
   header: document.querySelector("header"),
   hero: document.querySelector("section.hero"),
   offer: document.querySelector("section.offer"),
   about: document.querySelector("section.about"),
-  realization: document.querySelector(".realization__content"),
+  realization: document.querySelector("#realization"),
+  gallery: document.querySelector("#gallery"),
   banner: document.querySelector(".banner"),
   footer: document.querySelector(".footer"),
 };
@@ -29,13 +43,16 @@ async function fetchData() {
       "beforeend",
       getRealizationMarkup(data)
     );
+    pageRefs.gallery.insertAdjacentHTML(
+      "beforeend",
+      getGalleryItemsMarkup(GALLERY_ITEMS)
+    );
+    makeMarcy();
     pageRefs.banner.insertAdjacentHTML(
       "beforeend",
       getSocialBannerMarkup(data)
     );
     pageRefs.footer.insertAdjacentHTML("beforeend", getFooterMarkup(data));
-
-    realization.addEventListener("click", () => console.log("111"));
   } catch (error) {
     console.error("Data loading error:", error);
   }
