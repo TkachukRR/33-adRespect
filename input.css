@@ -13,6 +13,7 @@
   font-weight: 400;
   line-height: 150%;
   border-radius: 200px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-green-dark {
@@ -20,6 +21,13 @@
   color: theme("colors.grey");
   border: 1px solid theme("colors.green");
 }
+.btn-green-dark:hover,
+.btn-green-light:hover {
+  background: theme("colors.grey");
+  color: theme("colors.green");
+  border: 1px solid theme("colors.green");
+}
+
 .btn-green-light {
   border: 1px solid theme("colors.green");
 }
@@ -33,6 +41,12 @@
   background: theme("colors.grey");
   color: theme("colors.green");
   border: 1px solid theme("colors.grey");
+}
+.btn-wight:hover,
+.btn-wight-full:hover {
+  color: theme("colors.green");
+  background: theme("colors.beige");
+  border: 1px solid theme("colors.green");
 }
 
 .gradient {

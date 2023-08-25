@@ -15,14 +15,14 @@ function makeNavItemsMarkup(data, ids) {
 
       if (!data[section].options) {
         return `
-        <li>
+        <li class="hover:bg-beige">
           <a href="#${href}" class="">
             ${title}
           </a>
         </li>`;
       }
       return `
-      <li class="relative group">
+      <li class="relative group hover:bg-beige">
         <a href="#${href}" class="flex gap-[8px] items-center">
           ${title}
           <img src="./images/arrow_down.svg" alt="submenu arrow" class="group-hover:rotate-180"/>

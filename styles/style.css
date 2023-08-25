@@ -639,6 +639,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[44px\] {
+  bottom: 44px;
+}
+
 .bottom-\[45\.5px\] {
   bottom: 45.5px;
 }
@@ -661,10 +665,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-\[44px\] {
-  bottom: 44px;
 }
 
 .isolate {
@@ -882,10 +882,6 @@ video {
 
 .h-\[1000px\] {
   height: 1000px;
-}
-
-.h-\[1475px\] {
-  height: 1475px;
 }
 
 .h-\[16px\] {
@@ -2188,6 +2184,10 @@ video {
   padding-bottom: 160px;
 }
 
+.pb-\[44px\] {
+  padding-bottom: 44px;
+}
+
 .pb-\[4px\] {
   padding-bottom: 4px;
 }
@@ -2206,10 +2206,6 @@ video {
 
 .pt-\[120px\] {
   padding-top: 120px;
-}
-
-.pb-\[44px\] {
-  padding-bottom: 44px;
 }
 
 .text-left {
@@ -2796,11 +2792,19 @@ video {
   font-weight: 400;
   line-height: 150%;
   border-radius: 200px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-green-dark {
   background: #1B5B31;
   color: #F5F0EC;
+  border: 1px solid #1B5B31;
+}
+
+.btn-green-dark:hover,
+.btn-green-light:hover {
+  background: #F5F0EC;
+  color: #1B5B31;
   border: 1px solid #1B5B31;
 }
 
@@ -2817,6 +2821,13 @@ video {
   background: #F5F0EC;
   color: #1B5B31;
   border: 1px solid #F5F0EC;
+}
+
+.btn-wight:hover,
+.btn-wight-full:hover {
+  color: #1B5B31;
+  background: #DCC1AB;
+  border: 1px solid #1B5B31;
 }
 
 .gradient {
@@ -2857,6 +2868,16 @@ video {
       max-width: 1536px;
     }
   }
+}
+
+.hover\:border-grey:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 240 236 / var(--tw-border-opacity));
+}
+
+.hover\:bg-beige:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 193 171 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
